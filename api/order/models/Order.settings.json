@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "order",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "animals": {
+      "collection": "animals",
+      "via": "order"
+    },
+    "class": {
+      "model": "class",
+      "via": "orders"
+    },
+    "genera": {
+      "collection": "genus",
+      "via": "order"
+    }
+  }
+}

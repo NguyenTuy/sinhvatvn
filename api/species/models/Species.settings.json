@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "species",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "animals": {
+      "collection": "animals",
+      "via": "species"
+    },
+    "genera": {
+      "collection": "genus",
+      "via": "species"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "class",
+  "info": {
+    "name": "class",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "animals": {
+      "collection": "animals",
+      "via": "class"
+    },
+    "orders": {
+      "collection": "order",
+      "via": "class"
+    }
+  }
+}

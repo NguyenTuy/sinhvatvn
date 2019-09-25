@@ -1,0 +1,55 @@
+{
+  "connection": "default",
+  "collectionName": "animals",
+  "info": {
+    "name": "animals",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "scienceName": {
+      "type": "string"
+    },
+    "vietnameseName": {
+      "type": "string"
+    },
+    "otherName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "author": {
+      "collection": "user",
+      "via": "animals",
+      "dominant": true,
+      "plugin": "users-permissions"
+    },
+    "class": {
+      "model": "class",
+      "via": "animals"
+    },
+    "order": {
+      "model": "order",
+      "via": "animals"
+    },
+    "genus": {
+      "model": "genus",
+      "via": "animals"
+    },
+    "species": {
+      "model": "species",
+      "via": "animals"
+    },
+    "updated": {
+      "type": "date"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

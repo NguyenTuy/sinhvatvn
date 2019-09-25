@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/classes",
+      "handler": "Class.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/classes/count",
+      "handler": "Class.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/classes/:_id",
+      "handler": "Class.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/classes",
+      "handler": "Class.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/classes/:_id",
+      "handler": "Class.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/classes/:_id",
+      "handler": "Class.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
