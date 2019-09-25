@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "species",
   "info": {
     "name": "species",
     "description": ""
