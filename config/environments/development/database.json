@@ -1,0 +1,20 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "mongodb-hbbsu.mongodb.net",
+        "port": 27017,
+        "database": "sinhvatvn",
+        "username": "vantuy63",
+        "password": "pm1Mongodb!",
+        "srv": true
+      },
+      "options": {
+        "ssl": true
+      }
+    }
+  }
+}
