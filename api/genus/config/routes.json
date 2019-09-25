@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/genera",
+      "handler": "Genus.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/genera/count",
+      "handler": "Genus.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/genera/:_id",
+      "handler": "Genus.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/genera",
+      "handler": "Genus.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/genera/:_id",
+      "handler": "Genus.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/genera/:_id",
+      "handler": "Genus.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
